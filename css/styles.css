@@ -54,7 +54,7 @@
   }
   
   .poppins-black {
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
@@ -107,7 +107,7 @@
     font-style: italic;
   }
   
-  .poppins-black-italic {
+ .poppins-black-italic {
     font-family: "Poppins", serif;
     font-weight: 900;
     font-style: italic;
@@ -145,11 +145,14 @@ ul {
 /*Hero section*/
 .hero-title {
   color: var(--color-primary-light);
-  font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
- 
-}
+
+ }
+
+ h1.hero-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+   }
 .hero-title .accent {
   color: var(--color-brand-light);
 }

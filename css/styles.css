@@ -165,6 +165,10 @@ ul {
 
 .hero-section{
   padding: 272px 0;
+ background-image: url(../images/hero-section-background.jpg);
+ background-repeat: no-repeat;
+ background-position: center top;
+ background-size: cover;
 }
 .hero-title {
   margin-bottom: 0;
@@ -265,8 +269,9 @@ flex-basis: calc(100% - 40px / 3);
 
 .format-card {
   padding: 24px;
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
   border: 1px solid gray;
-  background-repeat: 16px;
+  border-radius: 16px;
 }
 .formats-title{
   margin-bottom: 80px;
@@ -287,6 +292,14 @@ flex-basis: calc(100% - 40px / 3);
 }
 
 /*Footer*/
+.footer {
+  background-image: url(../images/footer-background.png);
+background-color: var(--color-primary-dark);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
 .address-link{
   color: var(--color-primary-light);
   font-size: 16px;

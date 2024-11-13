@@ -500,9 +500,15 @@ flex-basis: calc((100% - 40px) / 3);
 
 .modal {
   position: relative;
-  
+
   width: 880px;
   height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }

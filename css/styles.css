@@ -70,7 +70,9 @@
 
 /*Basic*/
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -85,6 +87,10 @@ body {
 }
 h1, h2, h3, h4, h5, p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 address {
@@ -256,6 +262,8 @@ gap: 40px;
 }
 
 /*Chefs section*/
+
+
 .chefs-title {
   max-width: 520px;
   margin-bottom: 0 auto 80px;
@@ -266,6 +274,19 @@ gap: 40px;
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: "";
+}
+.chef-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+.chef-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
 }
 
 .chef-photo {
@@ -284,15 +305,28 @@ opacity: 0px; */
   font-weight: 600;    
 }
 
+.chef-text p {
+  margin-bottom: 24px;
+}
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
 /*Format section*/
+
+.formats-container{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .formats-list{
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .formats-item{
-flex-basis: calc(100% - 40px / 3);
+flex-basis: calc((100% - 40px) / 3);
 }
 
 .format-card {
@@ -320,6 +354,7 @@ flex-basis: calc(100% - 40px / 3);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -346,17 +381,54 @@ flex-basis: calc(100% - 40px / 3);
 
 
 /*Contact section*/
+
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
 .contact-title{
   margin-bottom: 16px;
 }
 
+.contact-map {
+  border: none;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
 /*Footer*/
 .footer {
+  padding: 32px 0 ;
   background-image: url(../images/footer-background.png);
 background-color: var(--color-primary-dark);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .address-link{

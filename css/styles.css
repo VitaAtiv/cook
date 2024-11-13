@@ -265,16 +265,25 @@ gap: 40px;
 
 
 .chefs-title {
-  max-width: 520px;
-  margin-bottom: 0 auto 80px;
+  position: relative;
+  margin: 0 auto 80px;
 }
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: "";
 }
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
+}
+
 .chef-list {
   display: flex;
   gap: 40px 30px;
@@ -402,12 +411,34 @@ flex-basis: calc((100% - 40px) / 3);
 
 /*Footer*/
 .footer {
+  position: relative;
   padding: 32px 0 ;
   background-image: url(../images/footer-background.png);
-background-color: var(--color-primary-dark);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.footer::before {
+  background-image: url(../images/decor-bread-small.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+.footer::after{
+  background-image: url(../images/decor-bread-big.png);
+  width: 380px;
+  height: 190px;
+  right: 0;  
 }
 
 .footer-container {
@@ -451,6 +482,27 @@ background-position: center;
 
 .address-link {
   font-size: 14px;
-  
- 
 } 
+
+/*Modal*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: 0, 0, 0, 0, 0.5;
+}
+
+.modal {
+  position: relative;
+  
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}

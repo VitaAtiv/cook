@@ -1,3 +1,49 @@
 {
     "liveServer.settings.port": 5502
 }
+
+// {
+//   "liveSassCompile.settings.formats":[
+//    {
+//       "extensionName": ".min.css",
+//       "format": "compressed",
+//       "savePath": "/site/public/stylesheets/"
+//    }
+//  ],
+//  "liveSassCompile.settings.excludeList": [
+//     "**/node_modules/**",
+//     ".vscode/**",
+//     ".git/**"
+//  ],
+//  "liveSassCompile.settings.generateMap": false,
+//  "liveSassCompile.settings.autoprefix": [
+//      "> 1%",
+//      "last 10 versions"
+// ],
+// "emmet.triggerExpansionOnTab": true
+// }
+
+
+
+
+// "liveSassCompile.settings.formats":[
+//         // This is Default.
+//         {
+//             "format": "expanded",
+//             "extensionName": ".css",
+//             "savePath": null
+//         },
+//         // You can add more
+//         {
+//             "format": "compressed",
+//             "extensionName": ".min.css",
+//             "savePath": "/dist/css"
+//         },
+//         // More Complex
+//         {
+//             "format": "compressed",
+//             "extensionName": ".min.css",
+//             "savePath": "~/../css/"
+//         }
+//     ]
+
